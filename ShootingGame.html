@@ -1,0 +1,73 @@
+<!doctype html>
+	<html>
+		<head>
+			<meta charset="utf=8"/>
+			<title>Shooting Game</title>
+			<style>
+				#range{
+					position:absolute;
+					top:0px;
+					left:0px;
+					background:url(space.jpg);
+					cursor:crosshair;
+					width:1300px;
+					height:500px;
+	
+				}
+				#img1{
+					position:absolute;
+					border:none;
+					left:0px;
+					top:100px;
+					padding:10px;
+				}
+				#score{
+					font:16px normal arial,verdana,sans-serif;
+					color:white;
+					padding:10px;
+				}
+				</style>
+			<script>
+			var timer1=null;
+			var el=null;
+			var score=0;
+			var shots=0;
+			function moveIt(){
+				if(parseInt(el.style.left)>(screen.width-50))
+				el.style.left=0;
+				el.style.left=parseInt(el.style.left)+6+"px";
+				el.style.top=100+(80*Math.sin(parseInt(el.style.left)/50))+"px";
+				timer1=setTimeout(moveIt,25);
+				}
+			function scoreUp(){
+				score++
+			}
+			function scoreboard(){
+				document.getElementById("score").innerHTML="Shots: "+shots+" Score: "+score; 
+			}
+			window.onload=function(){
+				el=document.getElementById("img1");
+				el.onclick=scoreUp;
+				document.getElementById("range").onclick=function(){
+					shots++;
+					scoreboard();
+				}
+				scoreboard();
+				el.style.left="50px";
+				moveIt();
+			}
+			</script>
+			</head>
+			<body>
+				<div id="range">
+					<div id="score"></div>
+					<img alt="Fire!" id="img1" src="ufo.png" width="100px" height="100px"/>
+				</div>
+			</body>
+		</html>
+				
+				
+			
+			
+		
+				
