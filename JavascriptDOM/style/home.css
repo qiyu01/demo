@@ -1,0 +1,142 @@
+@import url(type.css);
+@import url(color.css);
+section,header,article,nav{
+	display:block;
+}
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+	margin:1em 10%;
+	
+	
+}
+header{
+	
+	border-width:.1em;
+	border-style:solid;
+	border-bottom-width:0;
+}
+header nav{
+	
+	border-width:.1em;
+	border-style:solid;
+	border-bottom-width:0;
+	border-top-width:0;
+	padding-left:10%;
+}
+header nav ul{
+	width:100%;
+	overflow:hidden;
+	border-left-width:.1em;
+	border-left-style:solid;
+}
+header nav li{
+	display:inline;
+}
+header nav li a{
+	display:block;
+	float:left;
+	padding:.5em 2em;
+	border-right:.1em solid;
+}
+article{
+	border-width:.1em;
+	border-style:solid;
+	border-top-width:0;
+	padding:2em 10%;
+	line-height:1.8em;
+}
+article img{
+	border-width:.1em;
+	border-style:solid;
+	outline-width:.1em;
+	outline-style:solid;
+}
+body img{
+	
+	
+	margin:0;
+	
+}
+#img{
+	background-image:url(../images/showtime.png);
+	background-position:top right;
+	background-repeat:no-repeat;
+	
+	padding:0;
+}
+
+#slideshow{
+	width:150px;
+	height:150px;
+	position:relative;
+	overflow:hidden;
+	border-radius:15px;
+}
+#preview{
+	position:absolute;
+	border-width:0;
+	outline-width:0;
+}
+#imagegallery li{
+	display:inline;
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+/* inline 边距为0 */
+/* #imagegallery{
+	font-size: 0;
+    letter-spacing: -1px;
+} */
+
+#imagegallery li a{
+	margin:0;
+	padding:0;
+	
+}
+#imagegallery li a img{
+	border-width:0;
+	outline-width:0;
+	padding:0;
+	margin:0;
+}
+td{
+	padding:.5em 3em;
+}
+dt{
+	float:left;
+	margin-right:1em;
+}
+dd{
+	float:left;
+	margin-right:3em;
+}
+dl{
+	overflow:hidden;
+}
+tr.odd td{
+	color:#223;
+	background-color:#ec8;
+}
+tr.highlight td{
+	color:#223;
+	background-color:#cba;
+	font-weight:bold;
+}
+th,td{
+	width:9em;
+	text-align:center;
+}
+label{
+	display:block;
+}
+fieldset{
+	border:0;
+}
+#form p{
+	margin:0;
+}

@@ -1,0 +1,11 @@
+#slidshow{
+	width:100px;
+	height:100px;
+	overflow:hidden;
+	border:1px solid black;
+	position:relative;
+	
+}
+img{
+	border:0;
+}
