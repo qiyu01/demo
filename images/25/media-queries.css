@@ -1,17 +1,17 @@
 @media screen and (max-width: 980px) {
 
-	/* pagewrap */
+	/* 主页面 */
 	#pagewrap {
 		width: 95%;
 	}
 
-	/* content */
+	/* 内容区 */
 	#content {
 		width: 60%;
 		padding: 3% 4%;
 	}
 
-	/* sidebar */
+	/* 边栏 */
 	#sidebar {
 		width: 30%;
 	}
@@ -24,7 +24,7 @@
 		
 	}
 
-	/* embedded videos */
+	/* 视频控件 */
 	.video embed,
 	.video object,
 	.video iframe {
@@ -37,13 +37,13 @@
 }
 @media screen and (max-width: 650px) {
 
-	/* header */
+	
 	#header {
 		width:100%;
 		height: auto;
 	}
 
-	/* search form */
+	
 	#searchform {
 		position: absolute;
 		top: 5px;
@@ -58,7 +58,7 @@
 		width: 150px;
 	}
 
-	/* main nav */
+	
 	#main-nav {
 		position: static;
 	}
@@ -66,19 +66,19 @@
 		margin-right:5px;
 	}
 
-	/* site logo */
+	
 	#site-logo {
 		margin: 15px 100px 5px 0;
 		position: static;
 	}
 
-	/* site description */
+	
 	#site-description {
 		margin: 0 0 15px;
 		position: static;
 	}
 
-	/* content */
+	
 	#content {
 		width:auto;
 		
@@ -86,7 +86,7 @@
 		margin: 20px 0px;
 	}
 
-	/* sidebar */
+	
 	#sidebar {
 		width: 100%;
 		margin: 0;
@@ -97,7 +97,7 @@
 		margin: 0 0 10px;
 	}
 
-	/* embedded videos */
+	
 	.video embed,
 	.video object,
 	.video iframe {
@@ -107,12 +107,12 @@
 }
 @media screen and (max-width: 480px) {
 
-	/* disable webkit text size adjust (for iPhone) */
+	
 	html {
 		-webkit-text-size-adjust: none;
 	}
 
-	/* main nav */
+	
 	#main-nav a {
 		font-size: 90%;
 		padding: 10px 8px;
